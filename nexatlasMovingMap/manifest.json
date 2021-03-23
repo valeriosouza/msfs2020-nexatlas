@@ -1,15 +1,15 @@
 {
-  "name": "FS2020 SkyVector Moving Map",
+  "name": "FS2020 NexAtlas Moving Map",
   "version": "0.1",
   "manifest_version": 2,
-  "description": "Skyvector Moving Map Extension",
+  "description": "NexAtlas Moving Map Extension",
   "permissions": [ "tabs","storage" ],
   "browser_action": {
-    "default_popup": "skvpopup.html"
+    "default_popup": "nexpopup.html"
   },
   "content_scripts": [
     {
-      "matches": [ "http://localhost/*", "https://skyvector.com/*", "https://www.skyvector.com/*" ],
+      "matches": [ "http://localhost/*", "https://app.nexatlas.com/*", "https://app.nexatlas.com/dashboard/*" ],
       "js": [ "moving-map-content.js" ]
     }
   ],

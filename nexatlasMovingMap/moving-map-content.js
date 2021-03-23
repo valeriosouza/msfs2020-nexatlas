@@ -77,9 +77,9 @@ chrome.storage.sync.get({ portNumber: "8001" },
 
     function setMapIcon(latlon) 
     {
-        if (typeof SkyVector === 'undefined')
+        if (typeof NexAtlas === 'undefined')
         {
-            console.log("skyvector.com page not loaded");
+            console.log("app.nexatlas.com página não carregada");
             return;
         }
 
@@ -97,9 +97,9 @@ chrome.storage.sync.get({ portNumber: "8001" },
             el.parentNode.insertBefore(img, el.nextSibling);
         }
 
-        var point = SkyVector.ll2xy(latlon[0], latlon[1]);
-        img.style.top = Math.round(point.y - SkyVector.data.slideroffsety - planeSize/2) + "px";
-        img.style.left = Math.round(point.x - SkyVector.data.slideroffsetx - planeSize/2) + "px";
+        var point = NexAtlas.ll2xy(latlon[0], latlon[1]);
+        img.style.top = Math.round(point.y - NexAtlas.data.slideroffsety - planeSize/2) + "px";
+        img.style.left = Math.round(point.x - NexAtlas.data.slideroffsetx - planeSize/2) + "px";
         var heading = getHeading(lastLatLon[0], lastLatLon[1], latlon[0], latlon[1]);
         img.style.transform = "rotate(" + heading + "deg)";
         img.style.visibility = "visible";

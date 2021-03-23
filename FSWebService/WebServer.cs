@@ -69,7 +69,7 @@ namespace FSWebService {
                                 string rstr = _responderMethod(ctx.Request);
                                 byte[] buf = Encoding.UTF8.GetBytes(rstr);
                                 ctx.Response.ContentLength64 = buf.Length;
-                                ctx.Response.Headers.Add("Access-Control-Allow-Origin", "https://skyvector.com");
+                                ctx.Response.Headers.Add("Access-Control-Allow-Origin", "https://app.nexatlas.com");
                                 ctx.Response.Headers.Add("Access-Control-Allow-Methods", "GET");
                                 ctx.Response.OutputStream.Write(buf, 0, buf.Length);
                             }
