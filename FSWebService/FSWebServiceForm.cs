@@ -113,18 +113,19 @@ namespace FSWebService
             simStartTimer.Elapsed += (sender, ev) =>
             {
                 animate = !animate;
-                
-                Invoke(new MethodInvoker(delegate() {mainTextBox.Text = animate ? mainTextBox.Text.Replace("■", " ")  :mainTextBox.Text.Replace(" ","■"); })); 
-                Invoke(new MethodInvoker(delegate() {simController.Connect();}));
+
+                Invoke(new MethodInvoker(delegate() { mainTextBox.Text = animate ? mainTextBox.Text.Replace("■", " ")  : mainTextBox.Text.Replace(" ","■"); }));
+                Invoke(new MethodInvoker(delegate() { simController.Connect();}));
 
                 if (simController.IsConnected)
                 {
                     //   AddFirewallException();
-                    Invoke(new MethodInvoker(delegate() {mainTextBox.Text = $" Connected to Sim{Environment.NewLine} Starting Web Service on port {port}...{Environment.NewLine}"; })); 
-                    server = new WebServer(ReceiveCallback, "http://+:" + port + "/");
+                    Invoke(new MethodInvoker(delegate() { mainTextBox.Text = $" Connected to Sim{Environment.NewLine} Starting Web Service on port {port}...{Environment.NewLine}"; }));
+                    WebServer webServer = new WebServer(ReceiveCallback, "http://+:" + port + "/");
+                    server = webServer;
                     server.Run();
                     simStartTimer.Stop();
-                    Invoke(new MethodInvoker(delegate() {WindowState = FormWindowState.Minimized;}));
+                    Invoke(new MethodInvoker(delegate() { WindowState = FormWindowState.Minimized;}));
                     return;
                 }              
             };

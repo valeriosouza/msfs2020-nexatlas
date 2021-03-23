@@ -61,7 +61,7 @@ chrome.storage.sync.get({ portNumber: "8001" },
                 //console.log("readyState: 4");
                 if (this.status === 200) 
                 {
-                    //console.log("response: "+this.responseText);
+                    console.log("response: "+this.responseText);
                     var jsonResult = JSON.parse(this.responseText);
                     setMapIcon(jsonResult.coordinates);
                 } 
@@ -105,6 +105,7 @@ chrome.storage.sync.get({ portNumber: "8001" },
         img.style.visibility = "visible";
 
         lastLatLon = latlon;
+        console.log(latlon[0]);
     }
 
     setInterval(function() 

@@ -1,0 +1,10 @@
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\bin\Debug\FSWebService.exe.config
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\bin\Debug\FSWebService.exe
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\bin\Debug\FSWebService.pdb
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.csprojAssemblyReference.cache
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.FSWebServiceForm.resources
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.Properties.Resources.resources
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.csproj.GenerateResource.cache
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.csproj.CoreCompileInputs.cache
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.exe
+C:\Users\Valerio\Local Sites\msfs2020-nexatlas\msfs2020-nexatlas\FSWebService\obj\Debug\FSWebService.pdb
